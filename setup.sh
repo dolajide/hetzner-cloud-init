@@ -52,6 +52,7 @@ for IP in "${WHITELIST[@]}"; do
   ufw allow from "$IP"
 done
 
+ufw allow from 10.1.0.0/16
 ufw allow from 10.43.0.0/16
 ufw allow from 10.42.0.0/16
 ufw allow from 10.0.0.0/16 # default private network cidr
